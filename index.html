@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DroEsPery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo-icon {
+            background-color: #4a6fa5;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo-icon i {
+            font-size: 1.8rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .app-name {
+            color: #4a6fa5;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+        }
+        
+        .sidebar {
+            flex: 0 0 280px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .nav-list {
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin-bottom: 1rem;
+        }
+        
+        .nav-link {
+            display: block;
+            padding: 0.8rem 1.2rem;
+            color: #555;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background-color: #f0f5ff;
+            color: #4a6fa5;
+            border-left-color: #4a6fa5;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 0 3rem;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            scroll-margin-top: 20px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #f0f5ff;
+        }
+        
+        h3 {
+            color: #4a6fa5;
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem 0;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+        }
+        
+        ul, ol {
+            padding-left: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .highlight {
+            background-color: #f8f9ff;
+            border-left: 4px solid #4a6fa5;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-box {
+            background: linear-gradient(to right, #f8f9ff, #f0f5ff);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            border: 1px solid #e6ecff;
+        }
+        
+        .contact-box h3 {
+            color: #2c3e50;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background-color: #4a6fa5;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(74, 111, 165, 0.2);
+        }
+        
+        .email-link:hover {
+            background-color: #3a5a85;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(74, 111, 165, 0.3);
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: #b0b7c3;
+            padding: 2.5rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .update-date {
+            font-style: italic;
+            color: #8a9bb2;
+            margin-top: 1rem;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #4a6fa5;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        @media (max-width: 992px) {
+            .sidebar {
+                flex: 0 0 100%;
+                position: static;
+                margin-bottom: 2rem;
+            }
+            
+            .main-content {
+                padding: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 1.8rem;
+            }
+            
+            .content {
+                margin: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h1>Privacy Policy for <span class="app-name">DroEsPery</span></h1>
+            </div>
+            <p class="subtitle">This Privacy Policy describes how DroEsPery collects, uses, and shares your personal information when you use our application and services.</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#introduction" class="nav-link active">Introduction</a></li>
+                    <li class="nav-item"><a href="#data-collection" class="nav-link">Data Collection</a></li>
+                    <li class="nav-item"><a href="#data-use" class="nav-link">Use of Information</a></li>
+                    <li class="nav-item"><a href="#data-sharing" class="nav-link">Data Sharing</a></li>
+                    <li class="nav-item"><a href="#data-security" class="nav-link">Data Security</a></li>
+                    <li class="nav-item"><a href="#your-rights" class="nav-link">Your Rights</a></li>
+                    <li class="nav-item"><a href="#children-privacy" class="nav-link">Children's Privacy</a></li>
+                    <li class="nav-item"><a href="#changes" class="nav-link">Policy Changes</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <main class="main-content">
+                <section id="introduction" class="section">
+                    <h2>1. Introduction</h2>
+                    <p>Welcome to DroEsPery. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "Application"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the Application.</p>
+                    
+                    <p>We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the "Last Updated" date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.</p>
+                    
+                    <div class="highlight">
+                        <p><strong>By using the Application, you consent to the data practices described in this Privacy Policy. This policy applies to information we collect through the Application and in email, text, and other electronic communications between you and the Application.</strong></p>
+                    </div>
+                </section>
+                
+                <section id="data-collection" class="section">
+                    <h2>2. Information We Collect</h2>
+                    <p>We collect information that you provide directly to us and information about your use of the Application.</p>
+                    
+                    <h3>Personal Information</h3>
+                    <p>We may collect personal information that you voluntarily provide to us when you register with the Application, express an interest in obtaining information about us or our products and services, or when you otherwise contact us. The personal information we collect may include:</p>
+                    <ul>
+                        <li>Name and contact information (such as email address)</li>
+                        <li>Account credentials (such as usernames and passwords)</li>
+                        <li>Profile information (such as profile picture, biography)</li>
+                        <li>Communication preferences</li>
+                    </ul>
+                    
+                    <h3>Usage Information</h3>
+                    <p>When you use the Application, we may automatically collect certain information, including:</p>
+                    <ul>
+                        <li><strong>Device Information:</strong> We collect information about the mobile device you use to access our Application, including the hardware model, operating system and version, unique device identifiers, and mobile network information.</li>
+                        <li><strong>Log Information:</strong> We collect log information about your use of the Application, including the type of browser you use, access times, pages viewed, your IP address, and the page you visited before navigating to our Application.</li>
+                        <li><strong>Location Information:</strong> We may collect information about the location of your device when you access or use the Application, if you permit the Application to access location services through the permission system in your mobile device.</li>
+                    </ul>
+                    
+                    <h3>Information from Other Sources</h3>
+                    <p>We may obtain information from other sources and combine that with information we collect through our Application. For example, if you create or log into your account through a third-party social media site, we will have access to certain information from that site, such as your name, account information, and friends lists, in accordance with the authorization procedures determined by such social media site.</p>
+                </section>
+                
+                <section id="data-use" class="section">
+                    <h2>3. How We Use Your Information</h2>
+                    <p>We may use the information we collect about you for various purposes, including to:</p>
+                    
+                    <ul>
+                        <li>Provide, maintain, and improve our Application and services</li>
+                        <li>Process your transactions and send you related information, including confirmations and receipts</li>
+                        <li>Send you technical notices, updates, security alerts, and support and administrative messages</li>
+                        <li>Respond to your comments, questions, and requests, and provide customer service</li>
+                        <li>Communicate with you about products, services, offers, and events offered by DroEsPery and others, and provide news and information we think will be of interest to you</li>
+                        <li>Monitor and analyze trends, usage, and activities in connection with our Application</li>
+                        <li>Detect, investigate, and prevent fraudulent transactions and other illegal activities, and protect the rights and property of DroEsPery and others</li>
+                        <li>Personalize and improve the Application and provide content or features that match user profiles or interests</li>
+                        <li>Link or combine with information we get from others to help understand your needs and provide you with better service</li>
+                        <li>Carry out any other purpose described to you at the time the information was collected</li>
+                    </ul>
+                </section>
+                
+                <section id="data-sharing" class="section">
+                    <h2>4. Sharing of Your Information</h2>
+                    <p>We may share your personal information in the following circumstances:</p>
+                    
+                    <h3>With Your Consent</h3>
+                    <p>We may share your personal information with third parties when you have provided us with your consent to do so.</p>
+                    
+                    <h3>Service Providers</h3>
+                    <p>We may share your information with third-party vendors, service providers, contractors, or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include payment processing, data analysis, email delivery, hosting services, customer service, and marketing efforts.</p>
+                    
+                    <h3>For Legal Reasons</h3>
+                    <p>We may disclose your information if we believe it is reasonably necessary to:</p>
+                    <ul>
+                        <li>Comply with any applicable law, regulation, legal process, or governmental request</li>
+                        <li>Protect the security or integrity of our Application</li>
+                        <li>Protect DroEsPery, our users, or the public from harm or illegal activities</li>
+                        <li>Respond to an emergency which we believe in good faith requires us to disclose information</li>
+                    </ul>
+                    
+                    <h3>Business Transfers</h3>
+                    <p>If DroEsPery is involved in a merger, acquisition, or sale of all or a portion of its assets, your information may be transferred as part of that transaction. We will notify you via email and/or a prominent notice on our Application of any change in ownership or uses of your personal information.</p>
+                </section>
+                
+                <section id="data-security" class="section">
+                    <h2>5. Data Security</h2>
+                    <p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.</p>
+                    
+                    <div class="highlight">
+                        <p><strong>We urge you to take steps to keep your personal information safe, including your password for our Application, and to log out of your account after use. If you have any questions about the security of our Application, please contact us at <a href="mailto:np5065@gmail.com">np5065@gmail.com</a>.</strong></p>
+                    </div>
+                </section>
+                
+                <section id="your-rights" class="section">
+                    <h2>6. Your Privacy Rights</h2>
+                    <p>Depending on your location, you may have certain rights regarding your personal information, which may include:</p>
+                    
+                    <ul>
+                        <li><strong>Access:</strong> The right to request access to the personal information we have collected about you.</li>
+                        <li><strong>Correction:</strong> The right to request correction of any inaccurate personal information we hold about you.</li>
+                        <li><strong>Deletion:</strong> The right to request deletion of your personal information, subject to certain exceptions.</li>
+                        <li><strong>Opt-out:</strong> The right to opt-out of the sale or sharing of your personal information, if applicable.</li>
+                        <li><strong>Non-discrimination:</strong> The right not to receive discriminatory treatment for exercising your privacy rights.</li>
+                    </ul>
+                    
+                    <p>To exercise any of these rights, please contact us using the contact information provided below. We will respond to your request within the timeframe required by applicable law.</p>
+                </section>
+                
+                <section id="children-privacy" class="section">
+                    <h2>7. Children's Privacy</h2>
+                    <p>Our Application is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information without your consent, please contact us at the email address provided below.</p>
+                    
+                    <p>If we learn we have collected or received personal information from a child under 13 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 13, please contact us at <a href="mailto:np5065@gmail.com">np5065@gmail.com</a>.</p>
+                </section>
+                
+                <section id="changes" class="section">
+                    <h2>8. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. The updated version will be indicated by an updated "Last Updated" date at the bottom of this Privacy Policy. If we make material changes to this Privacy Policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification.</p>
+                    
+                    <p>We encourage you to review this Privacy Policy frequently to be informed of how we are protecting your information. Your continued use of the Application after the effective date of the revised Privacy Policy constitutes your acceptance of the terms.</p>
+                </section>
+                
+                <section id="contact" class="section">
+                    <h2>9. Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy or our practices with respect to your personal information, please contact us at:</p>
+                    
+                    <div class="contact-box">
+                        <h3>DroEsPery Privacy Team</h3>
+                        <p>Email us with any questions or concerns about our Privacy Policy or data practices.</p>
+                        <a href="mailto:np5065@gmail.com" class="email-link">
+                            <i class="fas fa-envelope"></i> np5065@gmail.com
+                        </a>
+                    </div>
+                    
+                    <p class="update-date"><strong>Last Updated:</strong> January 10, 2026</p>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2026 DroEsPery. All rights reserved.</p>
+                <p>This Privacy Policy describes how DroEsPery collects, uses, and shares your personal information when you use our application and services.</p>
+                <p>This document is provided for informational purposes only and does not constitute legal advice.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Update active nav link on scroll
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
